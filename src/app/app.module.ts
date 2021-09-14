@@ -27,7 +27,7 @@ const appRoutes: Routes = [
     CurrencyValueChangeDirective
   ],
   imports: [
-    RouterModule.forRoot(appRoutes),
+    RouterModule.forRoot(appRoutes, { relativeLinkResolution: 'legacy' }),
     BrowserModule,
     HttpClientModule,
     NgHttpLoaderModule.forRoot()
